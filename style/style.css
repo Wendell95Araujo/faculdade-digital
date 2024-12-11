@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --roxo-100: #ded0f173;
+  --roxo-200: #8e35ff;
+  --roxo-300: #5a13b4;
+  --roxo-400: rgb(59, 18, 112);
+
+  --branco-300: #ffffff;
+
+  --dourado-300: #cc7f0b;
+}
+
+a {
+  color: var(--roxo-300);
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+h1,
+h2,
+p,
+span {
+  color: var(--roxo-400);
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+header {
+  margin: 2% 15%;
+}
+
+footer {
+  background-color: var(--roxo-100);
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.tamanhoSecao {
+  margin: 4% 15%;
+}
+
+/*Cabeçalho*/
+.menuNavegacao {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputHeader,
+.inputHeader::placeholder,
+.inputHeader:focus {
+  border: none;
+  outline: none;
+  color: var(--roxo-300);
+}
+
+.campoPesquisa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--roxo-300);
+  opacity: 0.4;
+  padding: 0.1875rem 0.8125rem;
+}
+/*Fim Cabeçalho*/
+
+/*Título*/
+.subTitulo {
+  font-size: 6.5rem;
+  max-width: 65%;
+  font-weight: 300;
+}
+
+.posicaoSubTitulo {
+  display: flex;
+  align-items: flex-end;
+  gap: 8%;
+}
+
+.tamanhoTexto {
+  max-width: 14%;
+}
+
+.animacaoSeta {
+  position: relative;
+  animation: movimentoSeta 2s ease-in-out infinite;
+}
+
+@keyframes movimentoSeta {
+  0% {
+    top: -40px;
+  }
+
+  50% {
+    top: 0;
+  }
+
+  100% {
+    top: -40px;
+  }
+}
+/*Sim Título*/
+
+/*Carrossel de Cursos*/
+.displayCarrossel {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 5%;
+  margin-bottom: -50px;
+}
+
+.posicaoPersonagem {
+  position: relative;
+  top: -50px;
+}
+
+.preenchimentoCursos {
+  padding: 3% 0;
+}
+
+.tamanhoTituloCarreira {
+  font-size: 2rem;
+}
+
+.letraBranca {
+  color: var(--branco-300);
+}
+
+.tamanhoTituloSoftSkills {
+  font-size: 1.4rem;
+}
+
+.containerNomeCursos {
+  display: flex;
+  padding: 3%;
+  width: 100%;
+  gap: 40px;
+  background-color: #ffffff5c;
+  margin: 5% 0 10%;
+}
+
+.containerBotoes {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.containerSoftSkills {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  gap: 5%;
+  width: 105%;
+}
+
+.containerSkills {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.textoSkills {
+  opacity: 0.7;
+  font-size: 1.3rem;
+}
+
+.containerNivelSkills {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.tamanhoEstrela {
+  scale: 1.5;
+}
+
+.botaoInscrever {
+  background-color: var(--roxo-200);
+  color: var(--branco-300);
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 2% 0;
+  position: relative;
+  top: 45px;
+}
+
+/*Fim Carrossel de Cursos*/
+
+/*Blog*/
+
+.containerPostBlog {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 3%;
+}
+
+.corTexto {
+  color: var(--dourado-300);
+}
+
+.containerBotao {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  max-width: 340px;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.containerBotao:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(59, 18, 112, 0.2);
+}
+
+.containerTituloPost {
+  padding: 4%;
+}
+
+.containerInformacoesPost {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
