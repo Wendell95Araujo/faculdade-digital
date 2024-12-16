@@ -60,6 +60,12 @@ footer {
   align-items: center;
 }
 
+.ambienteVirtual {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .inputHeader,
 .inputHeader::placeholder,
 .inputHeader:focus {
@@ -116,6 +122,9 @@ footer {
 /*Sim Título*/
 
 /*Carrossel de Cursos*/
+.sectionColor {
+  background-color: #3b1270;
+}
 .displayCarrossel {
   display: flex;
   align-items: flex-start;
@@ -204,6 +213,12 @@ footer {
 
 /*Fim Carrossel de Cursos*/
 
+.divCursos {
+  margin-top: 2%;
+  display: flex;
+  gap: 10px;
+}
+
 /*Blog*/
 
 .containerPostBlog {
@@ -213,6 +228,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 3%;
+  gap: 20px;
 }
 
 .corTexto {
@@ -238,4 +254,96 @@ footer {
   margin-top: 10%;
   display: flex;
   justify-content: space-between;
+}
+
+/*Fim Blog*/
+@media screen and (min-width: 2560px) {
+  header {
+    margin: 2% 25%;
+  }
+
+  .tamanhoSecao {
+    margin: 4% 25%;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  header {
+    margin: 2% 10%;
+  }
+
+  .tamanhoSecao {
+    margin: 4% 10%;
+  }
+
+  .subTitulo {
+    font-size: 5.5rem;
+  }
+
+  .tamanhoTexto {
+    max-width: 16%;
+    font-size: 0.9rem;
+  }
+
+  .botaoInscrever {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .posicaoSubTitulo {
+    flex-direction: column;
+  }
+  .tamanhoTexto,
+  .subTitulo,
+  .posicaoPersonagem {
+    max-width: 100%;
+  }
+
+  .animacaoSeta {
+    display: none;
+  }
+
+  .displayCarrossel {
+    flex-direction: column;
+  }
+
+  .tamanhoSecao {
+    margin: 10% 10%;
+  }
+
+  .botaoInscrever {
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menuNavegacao {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .divCursos {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .subTitulo {
+    font-size: 3.5em;
+  }
+
+  .containerSoftSkills {
+    flex-direction: column;
+  }
+  .containerNomeCursos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .containerBotao,
+  .containerBotao img {
+    max-width: 100%;
+  }
 }
